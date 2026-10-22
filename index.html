@@ -13,14 +13,21 @@ const stories=[
 </script>
 <section class="shell" id="weekly-reports" aria-label="每周深度简报">
 <style>
-.weekly-nav{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}.weekly-nav a{padding:10px 14px;border:1px solid var(--line);text-decoration:none;font:14px system-ui}.weekly-report{border-top:2px solid var(--ink);padding:24px 0;margin:24px 0;scroll-margin-top:20px}.weekly-report h2{font-size:36px;line-height:1.4}.weekly-meta{font:16px system-ui;color:var(--muted);line-height:1.8}.weekly-body{white-space:pre-wrap;overflow-wrap:anywhere;line-height:2.05;font-size:21px}.weekly-body a{color:var(--accent)}.weekly-report summary{cursor:pointer;padding:16px 0;font-size:20px;font-weight:bold}.weekly-status{font-size:17px;line-height:1.85}.weekly-nav a{font-size:18px}@media(max-width:760px){.weekly-body{font-size:20px;line-height:2}.weekly-report h2{font-size:30px}}
+.weekly-nav{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}.weekly-nav a{padding:10px 14px;border:1px solid var(--line);text-decoration:none;font:14px system-ui}.weekly-report{border-top:2px solid var(--ink);padding:24px 0;margin:24px 0;scroll-margin-top:20px}.weekly-report h2{font-size:42px;line-height:1.5}.weekly-meta{font:16px system-ui;color:var(--muted);line-height:1.8}.weekly-body{white-space:pre-wrap;overflow-wrap:anywhere;line-height:2.15;font-size:var(--weekly-font,26px);max-width:36em;margin:20px auto}.weekly-body a{color:var(--accent)}.weekly-report summary{cursor:pointer;padding:20px 0;font-size:24px;font-weight:bold}.weekly-status{font-size:20px;line-height:1.9}.weekly-nav a{font-size:18px}@media(max-width:760px){.weekly-body{font-size:var(--weekly-font,24px);line-height:2.1}.weekly-report h2{font-size:36px}}
 </style>
 <div class="sectionbar"><h3>每周深度</h3><span>原定时任务同步</span></div>
-<nav class="weekly-nav" aria-label="周报栏目"><a href="#software-weekly">软件工程行业周报</a><a href="#github-weekly">GitHub 趋势简报</a></nav>
+<div style="font:18px system-ui;line-height:2;margin:16px 0"><label for="weekly-font-size">阅读字号（可继续放大） </label><input id="weekly-font-size" type="range" min="20" max="36" step="1" aria-label="周报正文字号" style="vertical-align:middle;max-width:100%"><output id="weekly-font-value" for="weekly-font-size"></output></div><nav class="weekly-nav" aria-label="周报栏目"><a href="#software-weekly">软件工程行业周报</a><a href="#github-weekly">GitHub 趋势简报</a></nav>
 <article class="weekly-report" id="software-weekly"><h2>软件工程行业周报</h2><p class="weekly-meta">每周一北京时间 08:00 左右更新</p><p class="weekly-status" role="status">正在读取周报…</p><details><summary>展开阅读全文</summary><div class="weekly-body"></div></details></article>
 <article class="weekly-report" id="github-weekly"><h2>每周 GitHub 趋势简报</h2><p class="weekly-meta">每周一北京时间 19:00 左右更新</p><p class="weekly-status" role="status">正在读取周报…</p><details><summary>展开阅读全文</summary><div class="weekly-body"></div></details></article>
 </section>
 <script>
+const weeklyFontInput=document.getElementById('weekly-font-size');
+const weeklyFontOutput=document.getElementById('weekly-font-value');
+let savedWeeklyFont;try{savedWeeklyFont=Number(localStorage.getItem('weekly-font-size'));}catch{}
+weeklyFontInput.value=savedWeeklyFont>=20&&savedWeeklyFont<=36?savedWeeklyFont:(window.matchMedia('(max-width:760px)').matches?24:26);
+function applyWeeklyFont(){document.getElementById('weekly-reports').style.setProperty('--weekly-font',weeklyFontInput.value+'px');weeklyFontOutput.textContent=' '+weeklyFontInput.value+'px';}
+weeklyFontInput.addEventListener('input',()=>{applyWeeklyFont();try{localStorage.setItem('weekly-font-size',weeklyFontInput.value);}catch{}});
+applyWeeklyFont();
 async function loadWeeklyReport(id){
  const root=document.getElementById(id),status=root.querySelector('.weekly-status'),body=root.querySelector('.weekly-body');
  try{
