@@ -2,6 +2,7 @@
 import feedparser
 from datetime import datetime, timezone, timedelta
 from html import escape
+from html.parser import HTMLParser
 from pathlib import Path
 import re
 
@@ -15,6 +16,30 @@ SOURCES = [
 
 START = "<!-- GUANCHAO_NEWS_START -->"
 END = "<!-- GUANCHAO_NEWS_END -->"
+
+class FeedText(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.parts = []
+        self.skip = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ("script", "style"):
+            self.skip += 1
+
+    def handle_endtag(self, tag):
+        if tag in ("script", "style") and self.skip:
+            self.skip -= 1
+
+    def handle_data(self, data):
+        if not self.skip:
+            self.parts.append(data)
+
+def feed_summary(value):
+    parser = FeedText()
+    parser.feed(str(value))
+    text = re.sub(r"\s+", " ", " ".join(parser.parts)).strip()
+    return text[:160] + ("…" if len(text) > 160 else "")
 
 def get_news():
     articles = []
@@ -36,6 +61,7 @@ def get_news():
                 "source": source,
                 "title": title,
                 "link": link,
+                "summary": feed_summary(entry.get("summary", "")),
             })
 
     return articles
@@ -47,6 +73,7 @@ def build_section(articles):
     cards = []
 
     for article in articles:
+        summary = article.get("summary") or "此来源未提供摘要，请阅读原文。"
         cards.append(f"""
         <article class="gc-news-card">
           <div class="gc-news-meta">
@@ -58,6 +85,8 @@ def build_section(articles):
               {escape(article['title'])}
             </a>
           </h3>
+          <p style="font-size:20px;line-height:1.9">{escape(summary)}</p>
+          <p class="gc-news-meta">来源摘要摘录 · 完整解读见首页每日深度简报</p>
         </article>
         """)
 
