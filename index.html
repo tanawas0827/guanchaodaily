@@ -10,4 +10,34 @@ const stories=[
 {cat:'growth',tag:'成长专栏',title:'成长不是和所有人赛跑，而是增加自己的选择。',desc:'比起追逐每个热点，更重要的是建立持续学习的节奏。',body:['他人的起点、资源和节奏与你不同。比较可以帮助发现差距，却不应该成为评价自己的唯一方式。','每周选择一个可完成的小目标，并回顾自己是否真正掌握，比每天改变学习方向更有效。','今日行动：写下本周最重要的一件事，并把它拆成一个可以在30分钟内完成的步骤。']},
 {cat:'growth',tag:'人生哲学',title:'真正的成熟，不是让所有人满意。',desc:'在尊重他人的同时，保留自己的边界和判断。',body:['边界感不是拒绝帮助别人，而是清楚自己愿意承担什么、能够承担什么。','可靠的人不一定最会说话，但会尽量兑现承诺，也能坦然说明做不到的事情。','今天练习：回忆一次勉强答应别人的经历，试着写一句既礼貌又明确的拒绝。']}
 ];let current=0;const cards=document.getElementById('cards');function render(filter='all'){cards.innerHTML='';stories.slice(1,6).forEach((s,i)=>{if(filter!=='all'&&s.cat!==filter)return;let e=document.createElement('article');e.className='card';e.dataset.category=s.cat;e.innerHTML=`<div class="num">0${i+1} / ${s.tag}</div><h4>${s.title}</h4><p>${s.desc}</p><button onclick="openStory(${i+1})">阅读全文 →</button>`;cards.append(e)});document.querySelector('.lead').classList.toggle('hide',!['all','ai'].includes(filter));document.querySelector('.grow').classList.toggle('hide',!['all','growth'].includes(filter));document.querySelector('.sectionbar').classList.toggle('hide',filter==='growth');if(filter==='growth')cards.innerHTML='';}function openStory(i){current=i;let s=stories[i];document.getElementById('rmeta').textContent=s.tag+' · 深度阅读';document.getElementById('rtitle').textContent=s.title;document.getElementById('rbody').innerHTML=s.body.map(x=>`<p>${x}</p>`).join('');document.getElementById('bookmark').textContent=localStorage.getItem('saved_'+i)?'★ 已收藏':'☆ 收藏文章';document.getElementById('overlay').classList.add('show');document.body.style.overflow='hidden'}function closeStory(){document.getElementById('overlay').classList.remove('show');document.body.style.overflow=''}function toggleSave(){let k='saved_'+current;localStorage.getItem(k)?localStorage.removeItem(k):localStorage.setItem(k,'1');document.getElementById('bookmark').textContent=localStorage.getItem(k)?'★ 已收藏':'☆ 收藏文章'}document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelector('.nav .active')?.classList.remove('active');b.classList.add('active');render(b.dataset.filter)});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeStory()});render();
+</script>
+<section class="shell" id="weekly-reports" aria-label="每周深度简报">
+<style>
+.weekly-nav{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}.weekly-nav a{padding:10px 14px;border:1px solid var(--line);text-decoration:none;font:14px system-ui}.weekly-report{border-top:2px solid var(--ink);padding:24px 0;margin:24px 0;scroll-margin-top:20px}.weekly-report h2{font-size:30px}.weekly-meta{font:13px system-ui;color:var(--muted);line-height:1.8}.weekly-body{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.95;font-size:16px}.weekly-body a{color:var(--accent)}.weekly-report summary{cursor:pointer;padding:14px 0;font-weight:bold}
+</style>
+<div class="sectionbar"><h3>每周深度</h3><span>原定时任务同步</span></div>
+<nav class="weekly-nav" aria-label="周报栏目"><a href="#software-weekly">软件工程行业周报</a><a href="#github-weekly">GitHub 趋势简报</a></nav>
+<article class="weekly-report" id="software-weekly"><h2>软件工程行业周报</h2><p class="weekly-meta">每周一北京时间 08:00 左右更新</p><p class="weekly-status" role="status">正在读取周报…</p><details><summary>展开阅读全文</summary><div class="weekly-body"></div></details></article>
+<article class="weekly-report" id="github-weekly"><h2>每周 GitHub 趋势简报</h2><p class="weekly-meta">每周一北京时间 19:00 左右更新</p><p class="weekly-status" role="status">正在读取周报…</p><details><summary>展开阅读全文</summary><div class="weekly-body"></div></details></article>
+</section>
+<script>
+async function loadWeeklyReport(id){
+ const root=document.getElementById(id),status=root.querySelector('.weekly-status'),body=root.querySelector('.weekly-body');
+ try{
+  const response=await fetch('./data/'+id+'.json',{cache:'no-store'});
+  if(!response.ok)throw new Error('HTTP '+response.status);
+  const report=await response.json();
+  if(typeof report.body!=='string')throw new Error('报告格式错误');
+  root.querySelector('h2').textContent=report.title;
+  status.textContent=(report.updated_at?'内容生成时间：'+new Date(report.updated_at).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai'})+'（北京时间）。':'')+(report.note||'');
+  root.querySelector('details').hidden=!report.body;
+  body.replaceChildren();
+  for(const part of report.body.split(/(https?:\/\/[^\s<>\[\]（）]+)/g)){
+   if(/^https?:\/\//.test(part)){const link=document.createElement('a');link.textContent=part;link.href=part;link.target='_blank';link.rel='noopener noreferrer';body.append(link);}
+   else body.append(document.createTextNode(part));
+  }
+ }catch(error){status.textContent='暂时无法读取最新周报，请稍后重试。';}
+}
+loadWeeklyReport('software-weekly');loadWeeklyReport('github-weekly');
+setInterval(()=>{loadWeeklyReport('software-weekly');loadWeeklyReport('github-weekly');},300000);
 </script></body></html>
