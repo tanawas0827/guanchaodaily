@@ -195,6 +195,26 @@
           "label": "AAD：化妆、卸妆与工具卫生",
           "url": "https://www.aad.org/public/diseases/acne/causes/makeup"
         }
+      ],
+      "images": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Cardigan_%28clothing%29.jpg",
+          "alt": "开衫服装结构线描",
+          "caption": "2015年开衫词汇示意图；不是品牌商品或实际试穿效果。未裁改。",
+          "credit": "David Ring / Europeana Fashion / MoMu / Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Cardigan_(clothing).jpg",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        {
+          "src": "./assets/outfit-palette.svg",
+          "alt": "换季叠穿的轮廓配色层次护理图",
+          "caption": "开衫搭配观察图，适用于多种个人风格。",
+          "credit": "观潮原创教学示意图",
+          "source": "./assets/outfit-palette.svg",
+          "license": "原创示意",
+          "license_url": ""
+        }
       ]
     }
   ]

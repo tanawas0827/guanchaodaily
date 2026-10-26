@@ -107,6 +107,17 @@
           "label": "Nespresso：Espresso Tonic公开配方",
           "url": "https://www.nespresso.com/pl/en/przepisy/espresso-tonic"
         }
+      ],
+      "images": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/3/37/Espresso_tonic.jpg",
+          "alt": "杯中加冰的咖啡汤力饮品",
+          "caption": "咖啡汤力外观参考，摄于2023年蒙得维的亚；不是本期配方的现场成品，未裁改。",
+          "credit": "Lajmmoore / Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Espresso_tonic.jpg",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
       ]
     }
   ]

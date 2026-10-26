@@ -134,6 +134,17 @@
           "label": "南京中医药大学博物馆：《寒食帖》介绍",
           "url": "https://museum.njucm.edu.cn/2024/0103/c6499a122726/page.htm"
         }
+      ],
+      "images": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Su_shi_wearing_Dongpo_jin.jpg",
+          "alt": "古代绘画中的苏轼戴东坡巾肖像局部",
+          "caption": "资料画像，文件页署为赵孟頫；后世艺术形象，不是本人照片。未裁改。",
+          "credit": "赵孟頫（文件页署名）/ Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Su_shi_wearing_Dongpo_jin.jpg",
+          "license": "公有领域",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+        }
       ]
     }
   ]

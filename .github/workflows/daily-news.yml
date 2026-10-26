@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['data/**', 'index.html', 'automation/**', 'tests/**', '.github/workflows/daily-news.yml']
+    paths: ['data/**', 'index.html', 'automation/**', 'tests/**', 'assets/**', '.github/workflows/daily-news.yml']
   schedule:
     - cron: '15 1,7,13 * * *'
 permissions:
@@ -46,6 +46,7 @@ jobs:
           mkdir -p dist
           cp index.html dist/
           cp -R data dist/
+          if [ -d assets ]; then cp -R assets dist/; fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

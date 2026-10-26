@@ -110,6 +110,17 @@
           "label": "万豪2025年度报告：轻资产与管理/特许经营模式",
           "url": "https://marriott.gcs-web.com/static-files/b82978a6-9d28-4e38-9855-fc4ae2cebe11"
         }
+      ],
+      "images": [
+        {
+          "src": "./assets/hotel-roles.svg",
+          "alt": "酒店业主、品牌、管理与渠道的关系图",
+          "caption": "配合酒店行业文章，不能代替具体门店事实核验。",
+          "credit": "观潮原创教学示意图",
+          "source": "./assets/hotel-roles.svg",
+          "license": "原创示意",
+          "license_url": ""
+        }
       ]
     }
   ]

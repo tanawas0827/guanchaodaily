@@ -61,9 +61,9 @@
       "region": "亚洲 · 日本 · 京都市西北部",
       "image_url": "",
       "image_alt": "",
-      "image_credit": "本期未核验可用图片授权，暂不展示照片。",
+      "image_credit": "",
       "image_source": "",
-      "intro": "今天从瑞士山谷转到京都岚山。官方旅游资料把竹林和渡月桥列为这一地区的代表景观；本期用它们作起点，提供一份可以继续查证的半日慢游构想。路线与时间分配为编辑建议，并非实时交通、天气或开放状态；图片授权尚未核实，本期先提供文字导览。",
+      "intro": "今天从瑞士山谷转到京都岚山。官方旅游资料把竹林和渡月桥列为这一地区的代表景观；本期用它们作起点，提供一份可以继续查证的半日慢游构想。路线与时间分配为编辑建议，并非实时交通、天气或开放状态；下方资料照片均附作者与许可信息，不代表出行当日实况。",
       "sections": [
         {
           "heading": "在哪里，先怎样认识这一片区域？",
@@ -120,6 +120,26 @@
         {
           "label": "日本国家旅游局：嵯峨与岚山",
           "url": "https://www.japan.travel/en/destinations/kansai/kyoto/sagano-and-arashi-yama-area/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/2021_Sagano_Bamboo_forest_in_Arashiyama%2C_Kyoto%2C_Japan.jpg",
+          "alt": "京都岚山嵯峨竹林中的步行道",
+          "caption": "岚山竹林资料照片，摄于2021年；非今日实况，未裁改。",
+          "credit": "Naokijp / Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2021_Sagano_Bamboo_forest_in_Arashiyama,_Kyoto,_Japan.jpg",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Togetsukyo.JPG",
+          "alt": "京都岚山的渡月桥与河流",
+          "caption": "渡月桥资料照片，摄于2010年；非今日天气或人流信息，未裁改。",
+          "credit": "Whity（原文件历史署名）/ Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Togetsukyo.JPG",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
         }
       ]
     }

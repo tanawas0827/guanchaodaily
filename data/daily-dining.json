@@ -136,6 +136,17 @@
           "label": "日本国家旅游局：餐具与食物的关系（跨文化延伸）",
           "url": "https://www.japan.travel/en/gastronomy/article-setting-the-table-in-style/"
         }
+      ],
+      "images": [
+        {
+          "src": "./assets/plating-layout.svg",
+          "alt": "主菜配菜酱汁与盘沿留白示意图",
+          "caption": "原创新手布局示意，实际份量和形状可按食物与器皿调整。",
+          "credit": "观潮原创教学示意图",
+          "source": "./assets/plating-layout.svg",
+          "license": "原创示意",
+          "license_url": ""
+        }
       ]
     }
   ]

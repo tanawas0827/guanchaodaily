@@ -217,6 +217,26 @@
           "label": "FDA：海产品选择、解冻与生熟分开",
           "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely"
         }
+      ],
+      "images": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Salmon_fried_in_pan.jpg",
+          "alt": "锅中的煎三文鱼",
+          "caption": "煎鱼过程参考资料照片，摄于2010年；不是本期柠檬煎鱼成品，颜色不能代替中心温度检测。未裁改。",
+          "credit": "gran / Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Salmon_fried_in_pan.jpg",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+        },
+        {
+          "src": "./assets/kitchen-sequence.svg",
+          "alt": "菜单准备顺序四格图",
+          "caption": "配合本期家庭菜单使用，不能用示意顺序替代食物熟度检测。",
+          "credit": "观潮原创教学示意图",
+          "source": "./assets/kitchen-sequence.svg",
+          "license": "原创示意",
+          "license_url": ""
+        }
       ]
     }
   ]

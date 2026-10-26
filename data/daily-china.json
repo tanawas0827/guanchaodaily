@@ -121,6 +121,17 @@
           "label": "UNESCO：苏州古典园林世界遗产介绍",
           "url": "https://whc.unesco.org/en/list/813/"
         }
+      ],
+      "images": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/f/fb/2017-04-16_Humble_Administrator%27s_Garden_01.jpg",
+          "alt": "苏州拙政园水边的廊道与漏窗",
+          "caption": "拙政园资料照片，摄于2017年；配合观察园林中的门窗与水面，未裁改。",
+          "credit": "Windmemories / Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2017-04-16_Humble_Administrator%27s_Garden_01.jpg",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
       ]
     }
   ]

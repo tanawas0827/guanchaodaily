@@ -97,6 +97,17 @@
           "label": "GitHub Docs：保护账号的多因素验证",
           "url": "https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa"
         }
+      ],
+      "images": [
+        {
+          "src": "./assets/account-security.svg",
+          "alt": "密码双重验证登录入口和恢复渠道四格图",
+          "caption": "通用账号保护示意，平台的具体步骤以官方说明为准。",
+          "credit": "观潮原创教学示意图",
+          "source": "./assets/account-security.svg",
+          "license": "原创示意",
+          "license_url": ""
+        }
       ]
     }
   ]

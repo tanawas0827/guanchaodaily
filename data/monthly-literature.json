@@ -44,6 +44,17 @@
           "question": "哪些段落让你感到作者在改变问题的问法，而不只是给出答案？",
           "source": "https://www.airitibooks.com/Publication/Details?publicationID=P202512120083"
         }
+      ],
+      "images": [
+        {
+          "src": "./assets/reading-paths.svg",
+          "alt": "三本文学候选书的阅读入口比较图",
+          "caption": "编辑选书示意图，不是书籍封面，也不是出版社宣传物料。",
+          "credit": "观潮原创教学示意图",
+          "source": "./assets/reading-paths.svg",
+          "license": "原创示意",
+          "license_url": ""
+        }
       ]
     }
   ]
