@@ -54,7 +54,9 @@ class ContentTests(unittest.TestCase):
             (root/'automation').mkdir();(root/'data').mkdir()
             job=next(j for j in JOBS if j['id']=='daily-knowledge')
             u.write(root/'automation/content-jobs.json',[job])
-            original={'entries':[job['sample']]}
+            sample=copy.deepcopy(job['sample'])
+            sample['date']='2000-01-01'
+            original={'entries':[sample]}
             u.write(root/'data/daily-knowledge.json',original)
             with patch.object(u,'ROOT',root),patch.dict(u.os.environ,{'AUTO_CONTENT_ENABLED':'true','OPENAI_API_KEY':''}),patch('sys.argv',['updater']):
                 self.assertEqual(u.main(),1)
