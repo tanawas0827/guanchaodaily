@@ -1,57 +1,70 @@
 {
-  "attempted_at": null,
+  "attempted_at": "2026-10-26T11:15:12.429919+08:00",
   "columns": {
     "daily-news": {
-      "state": "failed",
-      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+      "state": "current",
+      "error": null,
+      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
     },
     "daily-scenery": {
       "state": "failed",
-      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
+      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
     },
     "daily-knowledge": {
-      "state": "failed",
-      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+      "state": "current",
+      "error": null,
+      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
     },
     "daily-chef": {
       "state": "failed",
-      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
+      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
     },
     "daily-bar": {
       "state": "failed",
-      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
+      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
     },
     "daily-dining": {
       "state": "failed",
-      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
+      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
     },
     "daily-fashion": {
       "state": "failed",
-      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
+      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
     },
     "daily-industry": {
       "state": "failed",
-      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
+      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
     },
     "daily-china": {
       "state": "failed",
-      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
+      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
     },
     "daily-people": {
       "state": "failed",
-      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
+      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
     },
     "software-weekly": {
-      "state": "failed",
-      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+      "state": "current",
+      "error": null,
+      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
     },
     "github-weekly": {
       "state": "failed",
-      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
+      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
     },
     "monthly-literature": {
-      "state": "failed",
-      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+      "state": "current",
+      "error": null,
+      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
     }
   }
 }
