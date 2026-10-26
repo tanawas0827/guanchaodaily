@@ -1,70 +1,84 @@
 {
-  "attempted_at": "2026-10-26T11:15:12.429919+08:00",
+  "attempted_at": "2026-10-26T11:21:23.608012+08:00",
+  "engine": "chatgpt-scheduled-task",
   "columns": {
     "daily-news": {
       "state": "current",
-      "error": null,
-      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
+      "last_content_at": "2026-10-26",
+      "expected_period": "2026-10-26",
+      "error": null
     },
     "daily-scenery": {
-      "state": "failed",
-      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
-      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
+      "state": "stale",
+      "last_content_at": "2026-10-23",
+      "expected_period": "2026-10-26",
+      "error": null
     },
     "daily-knowledge": {
       "state": "current",
-      "error": null,
-      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
+      "last_content_at": "2026-10-26",
+      "expected_period": "2026-10-26",
+      "error": null
     },
     "daily-chef": {
-      "state": "failed",
-      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
-      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
+      "state": "stale",
+      "last_content_at": "2026-10-23",
+      "expected_period": "2026-10-26",
+      "error": null
     },
     "daily-bar": {
-      "state": "failed",
-      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
-      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
+      "state": "stale",
+      "last_content_at": "2026-10-23",
+      "expected_period": "2026-10-26",
+      "error": null
     },
     "daily-dining": {
-      "state": "failed",
-      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
-      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
+      "state": "stale",
+      "last_content_at": "2026-10-23",
+      "expected_period": "2026-10-26",
+      "error": null
     },
     "daily-fashion": {
-      "state": "failed",
-      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
-      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
+      "state": "stale",
+      "last_content_at": "2026-10-23",
+      "expected_period": "2026-10-26",
+      "error": null
     },
     "daily-industry": {
-      "state": "failed",
-      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
-      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
+      "state": "stale",
+      "last_content_at": "2026-10-23",
+      "expected_period": "2026-10-26",
+      "error": null
     },
     "daily-china": {
-      "state": "failed",
-      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
-      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
+      "state": "stale",
+      "last_content_at": "2026-10-23",
+      "expected_period": "2026-10-26",
+      "error": null
     },
     "daily-people": {
-      "state": "failed",
-      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
-      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
+      "state": "stale",
+      "last_content_at": "2026-10-23",
+      "expected_period": "2026-10-26",
+      "error": null
     },
     "software-weekly": {
       "state": "current",
-      "error": null,
-      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
+      "last_content_at": "2026-10-26",
+      "expected_period": "2026-10-26",
+      "error": null
     },
     "github-weekly": {
-      "state": "failed",
-      "error": "生成尚未启用：需配置API密钥并将AUTO_CONTENT_ENABLED设为true",
-      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
+      "state": "stale",
+      "last_content_at": "2026-10-19",
+      "expected_period": "2026-10-26",
+      "error": null
     },
     "monthly-literature": {
       "state": "current",
-      "error": null,
-      "attempted_at": "2026-10-26T11:15:12.429919+08:00"
+      "last_content_at": "2026-10",
+      "expected_period": "2026-10",
+      "error": null
     }
   }
 }
