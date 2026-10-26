@@ -145,7 +145,7 @@ async function showContentHealth(){
  const tr=document.createElement('tr');let date='读取失败',note='待验证';
  try{const r=await fetch('./data/'+id+'.json',{cache:'no-store'});if(!r.ok)throw new Error();const data=await r.json();
  date=data.entries?.map(e=>e.date).sort().at(-1)||data.issues?.map(e=>e.month).sort().at(-1)||data.updated_at||'尚未生成';
- const state=health.columns?.[id];note=state?.state==='failed'?'未更新：'+state.error:state?.state==='updated'?'本次已生成':state?.state==='current'?'当前周期已有内容':'自动生成尚未验证';
+ const state=health.columns?.[id];note=state?.state==='failed'?'未更新：'+state.error:state?.state==='updated'?'本次已生成':state?.state==='current'?'当前周期已有内容':state?.state==='stale'?'等待ChatGPT补更':'自动生成尚未验证';
  }catch{}
  for(const text of [label,date,note]){const td=document.createElement('td');td.textContent=text;td.style.cssText='padding:10px;border-bottom:1px solid var(--line);vertical-align:top';tr.append(td);}rows.append(tr);
  }));

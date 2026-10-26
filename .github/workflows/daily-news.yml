@@ -1,11 +1,11 @@
-name: Update All Content
+name: Publish and Check Content
 on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['automation/**', 'tests/test_update_content.py', '.github/workflows/daily-news.yml']
+    paths: ['data/**', 'index.html', 'automation/**', 'tests/**', '.github/workflows/daily-news.yml']
   schedule:
-    - cron: '0 1,7,13 * * *'
+    - cron: '15 1,7,13 * * *'
 permissions:
   contents: write
   pages: write
@@ -14,9 +14,9 @@ concurrency:
   group: guanchao-content-and-pages
   cancel-in-progress: false
 jobs:
-  update:
+  publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 110
+    timeout-minutes: 20
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -27,27 +27,21 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Validate updater
+      - name: Test content utilities
         run: python -m unittest discover -s tests -v
-      - name: Generate due content independently
-        id: content
-        continue-on-error: true
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5-mini' }}
-          AUTO_CONTENT_ENABLED: ${{ vars.AUTO_CONTENT_ENABLED }}
-        run: python automation/update_content.py
-      - name: Commit content and observable update status
+      - name: Check actual content dates without generating or changing articles
+        run: python automation/check_content_status.py
+      - name: Save status
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/
+          git add data/update-status.json
           if ! git diff --cached --quiet; then
-            git commit -m 'Update due columns and generation status'
+            git commit -m 'Check actual content freshness'
             git pull --rebase origin main
             git push origin HEAD:main
           fi
-      - name: Prepare site artifact
+      - name: Prepare website
         run: |
           mkdir -p dist
           cp index.html dist/
@@ -59,8 +53,3 @@ jobs:
       - name: Publish website
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: Report content failures after preserving and publishing old content
-        if: steps.content.outcome == 'failure'
-        run: |
-          echo 'One or more columns were not generated. See data/update-status.json and configure OPENAI_API_KEY / AUTO_CONTENT_ENABLED.'
-          exit 1
