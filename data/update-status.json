@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-10-26T11:21:23.608012+08:00",
+  "attempted_at": "2026-10-26T11:35:49.667046+08:00",
   "engine": "chatgpt-scheduled-task",
   "columns": {
     "daily-news": {
@@ -9,8 +9,8 @@
       "error": null
     },
     "daily-scenery": {
-      "state": "stale",
-      "last_content_at": "2026-10-23",
+      "state": "current",
+      "last_content_at": "2026-10-26",
       "expected_period": "2026-10-26",
       "error": null
     },
@@ -21,44 +21,44 @@
       "error": null
     },
     "daily-chef": {
-      "state": "stale",
-      "last_content_at": "2026-10-23",
+      "state": "current",
+      "last_content_at": "2026-10-26",
       "expected_period": "2026-10-26",
       "error": null
     },
     "daily-bar": {
-      "state": "stale",
-      "last_content_at": "2026-10-23",
+      "state": "current",
+      "last_content_at": "2026-10-26",
       "expected_period": "2026-10-26",
       "error": null
     },
     "daily-dining": {
-      "state": "stale",
-      "last_content_at": "2026-10-23",
+      "state": "current",
+      "last_content_at": "2026-10-26",
       "expected_period": "2026-10-26",
       "error": null
     },
     "daily-fashion": {
-      "state": "stale",
-      "last_content_at": "2026-10-23",
+      "state": "current",
+      "last_content_at": "2026-10-26",
       "expected_period": "2026-10-26",
       "error": null
     },
     "daily-industry": {
-      "state": "stale",
-      "last_content_at": "2026-10-23",
+      "state": "current",
+      "last_content_at": "2026-10-26",
       "expected_period": "2026-10-26",
       "error": null
     },
     "daily-china": {
-      "state": "stale",
-      "last_content_at": "2026-10-23",
+      "state": "current",
+      "last_content_at": "2026-10-26",
       "expected_period": "2026-10-26",
       "error": null
     },
     "daily-people": {
-      "state": "stale",
-      "last_content_at": "2026-10-23",
+      "state": "current",
+      "last_content_at": "2026-10-26",
       "expected_period": "2026-10-26",
       "error": null
     },
@@ -69,8 +69,8 @@
       "error": null
     },
     "github-weekly": {
-      "state": "stale",
-      "last_content_at": "2026-10-19",
+      "state": "current",
+      "last_content_at": "2026-10-26",
       "expected_period": "2026-10-26",
       "error": null
     },
