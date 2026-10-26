@@ -132,6 +132,27 @@ async function loadLiterature(){
 }
 loadLiterature();
 </script>
+
+<section class="shell" id="content-health" style="margin:24px auto;font:16px system-ui;line-height:1.8">
+<details><summary style="cursor:pointer">内容更新时间与自动更新状态</summary><p id="content-health-summary" role="status">正在读取各栏目状态…</p><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;text-align:left"><thead><tr><th>栏目</th><th>最新内容日期</th><th>更新状态</th></tr></thead><tbody id="content-health-rows"></tbody></table></div><p>内容日期与网页发布不是一回事。生成失败会保留旧内容；不会只换日期冒充更新。</p></details>
+</section>
+<script>
+async function showContentHealth(){
+ const labels={'daily-news':'首页新闻','daily-scenery':'每日风景','daily-knowledge':'每日常识','daily-chef':'明星大厨','daily-bar':'调酒大师','daily-dining':'食尚','daily-fashion':'时尚与男女妆教','daily-industry':'行业大揭秘','daily-china':'中国各地特色','daily-people':'古今名人','software-weekly':'软件工程周报','github-weekly':'GitHub趋势周报','monthly-literature':'文青'};
+ let health={};try{const r=await fetch('./data/update-status.json',{cache:'no-store'});if(r.ok)health=await r.json();}catch{}
+ const rows=document.getElementById('content-health-rows');rows.replaceChildren();
+ await Promise.all(Object.entries(labels).map(async([id,label])=>{
+ const tr=document.createElement('tr');let date='读取失败',note='待验证';
+ try{const r=await fetch('./data/'+id+'.json',{cache:'no-store'});if(!r.ok)throw new Error();const data=await r.json();
+ date=data.entries?.map(e=>e.date).sort().at(-1)||data.issues?.map(e=>e.month).sort().at(-1)||data.updated_at||'尚未生成';
+ const state=health.columns?.[id];note=state?.state==='failed'?'未更新：'+state.error:state?.state==='updated'?'本次已生成':state?.state==='current'?'当前周期已有内容':'自动生成尚未验证';
+ }catch{}
+ for(const text of [label,date,note]){const td=document.createElement('td');td.textContent=text;td.style.cssText='padding:10px;border-bottom:1px solid var(--line);vertical-align:top';tr.append(td);}rows.append(tr);
+ }));
+ document.getElementById('content-health-summary').textContent=health.attempted_at?'最近检查：'+new Date(health.attempted_at).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai'})+'（北京时间）':'尚无自动运行记录，不能据此认定自动更新正常。';
+}
+showContentHealth();
+</script>
 <section class="shell" id="weekly-reports" aria-label="每周深度简报">
 <style>
 .weekly-nav{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}.weekly-nav a{padding:10px 14px;border:1px solid var(--line);text-decoration:none;font:14px system-ui}.weekly-report{border-top:2px solid var(--ink);padding:24px 0;margin:24px 0;scroll-margin-top:20px}.weekly-report h2{font-size:42px;line-height:1.5}.weekly-meta{font:16px system-ui;color:var(--muted);line-height:1.8}.weekly-body{white-space:pre-wrap;overflow-wrap:anywhere;line-height:2.15;font-size:var(--weekly-font,26px);max-width:36em;margin:20px auto}.weekly-body a{color:var(--accent)}.weekly-report summary{cursor:pointer;padding:20px 0;font-size:24px;font-weight:bold}.weekly-status{font-size:20px;line-height:1.9}.weekly-nav a{font-size:18px}@media(max-width:760px){.weekly-body{font-size:var(--weekly-font,24px);line-height:2.1}.weekly-report h2{font-size:36px}}

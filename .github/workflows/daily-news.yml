@@ -1,36 +1,66 @@
-
-name: Update Daily News
-
+name: Update All Content
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['automation/**', 'tests/test_update_content.py', '.github/workflows/daily-news.yml']
   schedule:
-    - cron: '0 1 * * *'
-
+    - cron: '0 1,7,13 * * *'
 permissions:
   contents: write
-
+  pages: write
+  id-token: write
+concurrency:
+  group: guanchao-content-and-pages
+  cancel-in-progress: false
 jobs:
-  update-news:
+  update:
     runs-on: ubuntu-latest
+    timeout-minutes: 110
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
-      - name: Install dependencies
-        run: pip install feedparser
-
-      - name: Update news
-        run: python update_news.py
-
-      - name: Commit changes
+      - name: Validate updater
+        run: python -m unittest discover -s tests -v
+      - name: Generate due content independently
+        id: content
+        continue-on-error: true
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5-mini' }}
+          AUTO_CONTENT_ENABLED: ${{ vars.AUTO_CONTENT_ENABLED }}
+        run: python automation/update_content.py
+      - name: Commit content and observable update status
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html
-          git diff --cached --quiet || git commit -m "Update daily news"
-          git push
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update due columns and generation status'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Prepare site artifact
+        run: |
+          mkdir -p dist
+          cp index.html dist/
+          cp -R data dist/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Publish website
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Report content failures after preserving and publishing old content
+        if: steps.content.outcome == 'failure'
+        run: |
+          echo 'One or more columns were not generated. See data/update-status.json and configure OPENAI_API_KEY / AUTO_CONTENT_ENABLED.'
+          exit 1

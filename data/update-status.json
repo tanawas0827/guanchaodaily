@@ -1,0 +1,57 @@
+{
+  "attempted_at": null,
+  "columns": {
+    "daily-news": {
+      "state": "failed",
+      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+    },
+    "daily-scenery": {
+      "state": "failed",
+      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+    },
+    "daily-knowledge": {
+      "state": "failed",
+      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+    },
+    "daily-chef": {
+      "state": "failed",
+      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+    },
+    "daily-bar": {
+      "state": "failed",
+      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+    },
+    "daily-dining": {
+      "state": "failed",
+      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+    },
+    "daily-fashion": {
+      "state": "failed",
+      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+    },
+    "daily-industry": {
+      "state": "failed",
+      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+    },
+    "daily-china": {
+      "state": "failed",
+      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+    },
+    "daily-people": {
+      "state": "failed",
+      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+    },
+    "software-weekly": {
+      "state": "failed",
+      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+    },
+    "github-weekly": {
+      "state": "failed",
+      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+    },
+    "monthly-literature": {
+      "state": "failed",
+      "error": "自动生成尚未启用：待配置OPENAI_API_KEY与AUTO_CONTENT_ENABLED；保留原有内容。"
+    }
+  }
+}
