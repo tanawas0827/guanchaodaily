@@ -142,6 +142,81 @@
           "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
         }
       ]
+    },
+    {
+      "date": "2026-10-28",
+      "title": "南非·开普敦：桌山、海湾与罗本岛，风景也有历史",
+      "subtitle": "非洲慢游｜两天只设两个重点，为天气和理解留余量",
+      "region": "非洲·南非·西开普省",
+      "image_url": "",
+      "image_alt": "",
+      "image_credit": "",
+      "image_source": "",
+      "intro": "这期从亚洲转到非洲。开普敦可以从一条山海轮廓认识，也值得从历史现场理解。桌山与城市相互映衬，罗本岛记录的则是隔离、压迫与争取自由的经历。以下为2026年10月28日核对公开资料后的编辑行程构想，照片均为历史资料，不代表今日天气和开放状态。",
+      "sections": [
+        {
+          "heading": "先认识空间，不把三个地点当一个景区",
+          "paragraphs": [
+            "V&A滨水区是观察城市与桌山关系的一个入口；罗本岛位于开普敦近海，需另行安排海上交通。UNESCO资料记录岛上不同历史用途，特别强调20世纪政治监狱建筑所承载的历史意义。它不只是海上拍照点，也不应只被缩成某一位名人的传奇。",
+            "打开地图，分别标出住宿、滨水区、山地活动出发点和码头。地图距离短不意味着能轻松接上每个预约；海上航程、山地活动和城市交通都有各自的不确定性，首次到访不要排成一环错过就全盘失败的计划。"
+          ]
+        },
+        {
+          "heading": "两天的路线建议：自然与历史分别安排",
+          "paragraphs": [
+            "第一天先在滨水区域熟悉环境、确认回程，再按当天官方运营与天气信息决定桌山项目。上山要准备可增减衣物、饮水并核对返程规则；山下晴朗不能证明山顶风力适合活动。若项目取消，不把临时走陌生山路当成无成本替代。",
+            "第二天若预约与船班允许，为罗本岛保留主要时间。官方旅游资料介绍监狱遗址参观及讲解；集合地点、讲解语言、全程时长和取消政策以实际运营方为准。不要在同一天再塞入远距离半岛行程，给听讲、休息与返回留空间。"
+          ]
+        },
+        {
+          "heading": "季节、交通与预算要怎样查",
+          "paragraphs": [
+            "南半球的季节与中国不同，但月份只能帮助初步规划，实际出门还要核对预报、海况和运营通知。临近出行时在开普敦官方旅游网站查交通、天气与旅行安全建议，再到运营方核对订票条件。本期不提供未实时验证的船班和票价。",
+            "预算拆成国际往返、证件与保险、住宿、城市交通、参观餐饮和备用金。比较房间不要只看单晚价格，也看往返时间与安全可行的交通成本；选择可取消产品时，核对退款条件、天气取消与个人迟到是否适用同一规则。学生可以先做只游一个区域的版本，再增加付费项目。"
+          ]
+        },
+        {
+          "heading": "怎样尊重一个地方，也怎样开始交流",
+          "paragraphs": [
+            "在纪念场所遵守拍摄和参观规则，听讲时不要求讲述者重复私人创伤。不要为了照片离开允许区域；对居民和工作人员先征询再拍摄，公共空间不是没有边界的摄影布景。",
+            "聊天可以问“你旅行时更先了解地理，还是历史？”接着讲自己从资料学到的一点，再请对方分享。不要把开普敦概括成只有漂亮风景或只有风险的地方。今天做一张双栏清单：已核实地点与来源，出发前待查天气、预约、签证和回程；明确留白比伪造精确路线更实用。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "UNESCO：罗本岛",
+          "url": "https://whc.unesco.org/en/list/916"
+        },
+        {
+          "label": "开普敦官方旅游：罗本岛",
+          "url": "https://www.capetown.travel/robben-island/"
+        },
+        {
+          "label": "开普敦官方旅游与出行入口",
+          "url": "https://www.capetown.travel/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Cape_Town_Table_Mountain.jpg",
+          "alt": "从滨水区远望开普敦桌山",
+          "caption": "2017年8月9日资料照片，理解港口与山体关系；非实时，未裁改。",
+          "credit": "Matthiasmullie",
+          "source": "https://commons.wikimedia.org/wiki/File:Cape_Town_Table_Mountain.jpg",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Cape_Town_from_Table_mountain.jpg",
+          "alt": "从桌山俯瞰开普敦城区和海湾",
+          "caption": "不晚于2005年上传的历史资料，拍摄日未明确；不是当前城市与天气状态，未裁改。",
+          "credit": "Caroline Auzias",
+          "source": "https://commons.wikimedia.org/wiki/File:Cape_Town_from_Table_mountain.jpg",
+          "license": "CC BY-SA 2.0 France",
+          "license_url": "https://creativecommons.org/licenses/by-sa/2.0/fr/"
+        }
+      ]
     }
   ]
 }
