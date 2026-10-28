@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-10-28T10:17:11.180418+08:00",
+  "attempted_at": "2026-10-28T10:21:15.354084+08:00",
   "engine": "chatgpt-scheduled-task",
   "columns": {
     "daily-news": {
@@ -21,8 +21,8 @@
       "error": null
     },
     "daily-chef": {
-      "state": "stale",
-      "last_content_at": "2026-10-26",
+      "state": "current",
+      "last_content_at": "2026-10-28",
       "expected_period": "2026-10-28",
       "error": null
     },
@@ -33,8 +33,8 @@
       "error": null
     },
     "daily-dining": {
-      "state": "stale",
-      "last_content_at": "2026-10-26",
+      "state": "current",
+      "last_content_at": "2026-10-28",
       "expected_period": "2026-10-28",
       "error": null
     },
