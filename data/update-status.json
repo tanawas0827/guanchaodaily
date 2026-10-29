@@ -1,10 +1,10 @@
 {
-  "attempted_at": "2026-10-29T19:55:13.261691+08:00",
+  "attempted_at": "2026-10-29T19:59:16.472455+08:00",
   "engine": "chatgpt-scheduled-task",
   "columns": {
     "daily-news": {
-      "state": "stale",
-      "last_content_at": "2026-10-28",
+      "state": "current",
+      "last_content_at": "2026-10-29",
       "expected_period": "2026-10-29",
       "error": null
     },
@@ -39,8 +39,8 @@
       "error": null
     },
     "daily-fashion": {
-      "state": "stale",
-      "last_content_at": "2026-10-28",
+      "state": "current",
+      "last_content_at": "2026-10-29",
       "expected_period": "2026-10-29",
       "error": null
     },
