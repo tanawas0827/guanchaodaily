@@ -1,65 +1,65 @@
 {
-  "attempted_at": "2026-10-29T22:21:55.568991+08:00",
+  "attempted_at": "2026-10-30T15:08:27.762129+08:00",
   "engine": "chatgpt-scheduled-task",
   "columns": {
     "daily-news": {
-      "state": "current",
+      "state": "stale",
       "last_content_at": "2026-10-29",
-      "expected_period": "2026-10-29",
+      "expected_period": "2026-10-30",
       "error": null
     },
     "daily-scenery": {
-      "state": "current",
+      "state": "stale",
       "last_content_at": "2026-10-29",
-      "expected_period": "2026-10-29",
+      "expected_period": "2026-10-30",
       "error": null
     },
     "daily-knowledge": {
-      "state": "current",
+      "state": "stale",
       "last_content_at": "2026-10-29",
-      "expected_period": "2026-10-29",
+      "expected_period": "2026-10-30",
       "error": null
     },
     "daily-chef": {
-      "state": "current",
+      "state": "stale",
       "last_content_at": "2026-10-29",
-      "expected_period": "2026-10-29",
+      "expected_period": "2026-10-30",
       "error": null
     },
     "daily-bar": {
-      "state": "current",
+      "state": "stale",
       "last_content_at": "2026-10-29",
-      "expected_period": "2026-10-29",
+      "expected_period": "2026-10-30",
       "error": null
     },
     "daily-dining": {
-      "state": "current",
+      "state": "stale",
       "last_content_at": "2026-10-29",
-      "expected_period": "2026-10-29",
+      "expected_period": "2026-10-30",
       "error": null
     },
     "daily-fashion": {
-      "state": "current",
+      "state": "stale",
       "last_content_at": "2026-10-29",
-      "expected_period": "2026-10-29",
+      "expected_period": "2026-10-30",
       "error": null
     },
     "daily-industry": {
-      "state": "current",
+      "state": "stale",
       "last_content_at": "2026-10-29",
-      "expected_period": "2026-10-29",
+      "expected_period": "2026-10-30",
       "error": null
     },
     "daily-china": {
-      "state": "current",
+      "state": "stale",
       "last_content_at": "2026-10-29",
-      "expected_period": "2026-10-29",
+      "expected_period": "2026-10-30",
       "error": null
     },
     "daily-people": {
-      "state": "current",
+      "state": "stale",
       "last_content_at": "2026-10-29",
-      "expected_period": "2026-10-29",
+      "expected_period": "2026-10-30",
       "error": null
     },
     "software-weekly": {
