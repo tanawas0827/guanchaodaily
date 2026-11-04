@@ -357,6 +357,81 @@
       "image_alt": "",
       "image_credit": "",
       "image_source": ""
+    },
+    {
+      "date": "2026-11-04",
+      "title": "智利·瓦尔帕莱索：沿山坡读一座港城",
+      "subtitle": "从欧洲转向南美洲，把历史区当成生活中的街区来认识。",
+      "region": "南美洲·智利·瓦尔帕莱索",
+      "image_url": "",
+      "image_alt": "",
+      "image_credit": "",
+      "image_source": "",
+      "intro": "港口、平地和山坡叠在同一个视野里，是瓦尔帕莱索最值得慢看的关系。本期以联合国教科文组织和智利官方旅游资料为依据，给出半日观察路线；路线为编辑建议，照片为2013与2019年的资料影像，不代表今日路况、设施运营或安全状况。",
+      "sections": [
+        {
+          "heading": "先认识历史区的边界",
+          "paragraphs": [
+            "世界遗产项目的名称是瓦尔帕莱索港口城市历史区，不能把整座城市都当作同一保护范围。UNESCO关注这里十九世纪晚期城市发展，以及建筑和街巷怎样顺应山坡：平地的几何布局与坡地的适应性空间形成对照，早期工业交通设施也参与其中。",
+            "看第一张照片时，先找到港口，再沿密集屋顶向山坡移动。它提供的是空间关系，不是所有彩色房屋的建筑年代证明。若想做更细的历史散步，可从遗产项目页进入地图，对照自己计划走的街区，避免把网红地名和遗产边界混为一谈。"
+          ]
+        },
+        {
+          "heading": "半日路线：平地一个重点，山坡一个重点",
+          "paragraphs": [
+            "编辑建议把到达后的第一段留给平地街区，观察道路尺度、港城交通与公共空间；随后只选一个可达的山坡区域，边走边停，不为拍齐照片反复上下。午餐与休息放在两段之间，让脚程较慢的人也能参与。具体街段应结合当天住宿位置、官方提示与现场状况调整。",
+            "山坡交通设施值得了解，但第二张缆车资料照不是运营承诺。出发前核对拟乘线路是否开放、上下站与替代交通；无法确认时，改用经过核实的交通方案，或取消这段。穿适合步行的鞋，别为了完整路线硬走湿滑台阶，也不要进入私人楼梯与住宅拍照。"
+          ]
+        },
+        {
+          "heading": "季节、交通和预算怎样查",
+          "paragraphs": [
+            "智利位于南半球，安排假期不能直接套用中国月份的季节感。官方旅游页把十二月至三月列为适合享受当地气候的时段之一；这不是逐日天气预报。临行再查风、降雨和日照，准备可叠穿衣物，把室内备选与缩短行程也放进计划。",
+            "前往瓦尔帕莱索，可先用Chile Travel目的地页了解与圣地亚哥的交通关系，再到实际承运方核对站点、班次、行李与退改规则。预算拆成城际往返、当地交通、住宿、餐食、可能的参观支出及备用金；本期没有核实实时票价，不给一个看似精确的总价。"
+          ]
+        },
+        {
+          "heading": "比彩色背景多看一步",
+          "paragraphs": [
+            "旅行时可以问：坡地居民如何移动，货物怎样从港口进入城市，历史设施如何与当代生活并存？这些问题比把城市称为某种单一风格更有意思。街头作品、店铺和房屋可能处在不同权属之下，近距离拍摄人物、店内或私人空间前先征得同意，不因游客多就默认可以打扰。",
+            "官方旅游页建议夜间选择明亮、人多的街道或安全交通。这里不把任何街区保证为绝对安全，也不把一张旧照片当作今天的现场判断。今天的小练习是对照两张照片，分别指出一个地形影响交通、一个地形影响建筑的细节，再写下还需到现场或资料中核实的问题。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "UNESCO：瓦尔帕莱索港口城市历史区与地图入口",
+          "url": "https://whc.unesco.org/en/list/959/"
+        },
+        {
+          "label": "Chile Travel：目的地、出行与安全提示",
+          "url": "https://chile.travel/en/destinations/valparaiso/"
+        },
+        {
+          "label": "Chile Travel：西语目的地与季节建议",
+          "url": "https://chile.travel/destinos/valparaiso/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/8/81/Valparaiso_City.JPG",
+          "alt": "瓦尔帕莱索山坡建筑与港口的广角视野",
+          "caption": "2013年8月22日资料照片，观察港口、平地与山坡关系；未改动，不代表实时景象。",
+          "credit": "Matycarlota / Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Valparaiso_City.JPG",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Valpara%C3%ADso_9460.jpg",
+          "alt": "瓦尔帕莱索坡地缆车车厢与下方港区",
+          "caption": "2019年1月19日资料照片；未改动，不作为缆车当前运营证明。",
+          "credit": "Draceane / Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Valpara%C3%ADso_9460.jpg",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
     }
   ]
 }
