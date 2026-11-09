@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-11-09T10:42:32.945058+08:00",
+  "attempted_at": "2026-11-09T10:44:22.799929+08:00",
   "engine": "chatgpt-scheduled-task",
   "columns": {
     "daily-news": {
@@ -27,8 +27,8 @@
       "error": null
     },
     "daily-bar": {
-      "state": "stale",
-      "last_content_at": "2026-11-05",
+      "state": "current",
+      "last_content_at": "2026-11-09",
       "expected_period": "2026-11-09",
       "error": null
     },
@@ -45,8 +45,8 @@
       "error": null
     },
     "daily-industry": {
-      "state": "stale",
-      "last_content_at": "2026-11-05",
+      "state": "current",
+      "last_content_at": "2026-11-09",
       "expected_period": "2026-11-09",
       "error": null
     },
