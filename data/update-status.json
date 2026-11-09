@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-11-09T10:48:04.311749+08:00",
+  "attempted_at": "2026-11-09T10:49:28.191547+08:00",
   "engine": "chatgpt-scheduled-task",
   "columns": {
     "daily-news": {
@@ -39,8 +39,8 @@
       "error": null
     },
     "daily-fashion": {
-      "state": "stale",
-      "last_content_at": "2026-11-05",
+      "state": "current",
+      "last_content_at": "2026-11-09",
       "expected_period": "2026-11-09",
       "error": null
     },
