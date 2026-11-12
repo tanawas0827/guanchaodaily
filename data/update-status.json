@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-11-12T16:21:28.102533+08:00",
+  "attempted_at": "2026-11-12T16:58:26.935595+08:00",
   "engine": "chatgpt-scheduled-task",
   "columns": {
     "daily-news": {
@@ -15,8 +15,8 @@
       "error": null
     },
     "daily-knowledge": {
-      "state": "stale",
-      "last_content_at": "2026-11-09",
+      "state": "current",
+      "last_content_at": "2026-11-12",
       "expected_period": "2026-11-12",
       "error": null
     },
