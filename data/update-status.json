@@ -1,10 +1,10 @@
 {
-  "attempted_at": "2026-11-12T17:08:39.947550+08:00",
+  "attempted_at": "2026-11-12T17:12:41.841276+08:00",
   "engine": "chatgpt-scheduled-task",
   "columns": {
     "daily-news": {
-      "state": "stale",
-      "last_content_at": "2026-11-09",
+      "state": "current",
+      "last_content_at": "2026-11-12",
       "expected_period": "2026-11-12",
       "error": null
     },
