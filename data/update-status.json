@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-11-16T02:44:02.856993+08:00",
+  "attempted_at": "2026-11-16T02:46:43.851562+08:00",
   "engine": "chatgpt-scheduled-task",
   "columns": {
     "daily-news": {
@@ -63,8 +63,8 @@
       "error": null
     },
     "software-weekly": {
-      "state": "stale",
-      "last_content_at": "2026-11-09",
+      "state": "current",
+      "last_content_at": "2026-11-16",
       "expected_period": "2026-11-16",
       "error": null
     },
