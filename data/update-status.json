@@ -1,65 +1,65 @@
 {
-  "attempted_at": "2026-11-18T16:34:03.605496+08:00",
+  "attempted_at": "2026-11-19T05:26:32.978202+08:00",
   "engine": "chatgpt-scheduled-task",
   "columns": {
     "daily-news": {
       "state": "stale",
       "last_content_at": "2026-11-16",
-      "expected_period": "2026-11-18",
+      "expected_period": "2026-11-19",
       "error": null
     },
     "daily-scenery": {
       "state": "stale",
       "last_content_at": "2026-11-16",
-      "expected_period": "2026-11-18",
+      "expected_period": "2026-11-19",
       "error": null
     },
     "daily-knowledge": {
       "state": "stale",
       "last_content_at": "2026-11-16",
-      "expected_period": "2026-11-18",
+      "expected_period": "2026-11-19",
       "error": null
     },
     "daily-chef": {
       "state": "stale",
       "last_content_at": "2026-11-16",
-      "expected_period": "2026-11-18",
+      "expected_period": "2026-11-19",
       "error": null
     },
     "daily-bar": {
       "state": "stale",
       "last_content_at": "2026-11-16",
-      "expected_period": "2026-11-18",
+      "expected_period": "2026-11-19",
       "error": null
     },
     "daily-dining": {
       "state": "stale",
       "last_content_at": "2026-11-16",
-      "expected_period": "2026-11-18",
+      "expected_period": "2026-11-19",
       "error": null
     },
     "daily-fashion": {
       "state": "stale",
       "last_content_at": "2026-11-16",
-      "expected_period": "2026-11-18",
+      "expected_period": "2026-11-19",
       "error": null
     },
     "daily-industry": {
       "state": "stale",
       "last_content_at": "2026-11-16",
-      "expected_period": "2026-11-18",
+      "expected_period": "2026-11-19",
       "error": null
     },
     "daily-china": {
       "state": "stale",
       "last_content_at": "2026-11-16",
-      "expected_period": "2026-11-18",
+      "expected_period": "2026-11-19",
       "error": null
     },
     "daily-people": {
       "state": "stale",
       "last_content_at": "2026-11-16",
-      "expected_period": "2026-11-18",
+      "expected_period": "2026-11-19",
       "error": null
     },
     "software-weekly": {
